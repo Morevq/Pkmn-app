@@ -51,4 +51,3 @@ INTO
   (authority, username)
 VALUES
   ('ROLE_USER', 'pkmn_user_app');
-
