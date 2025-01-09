@@ -4,7 +4,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import su.morevq.pkmn.dto.CardDto;
+import su.morevq.pkmn.entity.CardEntity;
+import su.morevq.pkmn.entity.StudentEntity;
 import su.morevq.pkmn.models.card.Card;
+import su.morevq.pkmn.models.student.Student;
 import su.morevq.pkmn.service.CardService;
 
 import java.util.List;
@@ -15,7 +18,7 @@ import static su.morevq.pkmn.dto.CardDto.fromModel;
 
 
 @RestController
-@RequestMapping("/api/v1/card")
+@RequestMapping("/api/v1/cards")
 @RequiredArgsConstructor
 public class CardController {
     private final CardService cardService;
@@ -44,4 +47,9 @@ public class CardController {
         return ResponseEntity.ok(fromModel(savedCard, cardService));
     }
 
+    @GetMapping("/owner")
+    public ResponseEntity<CardDto> getCardByOwner(@RequestBody Student student) {
+        Card card = cardService.getCardByOwnerName(student.getSurName(), student.getFirstName(), student.getPatronicName());
+        return ResponseEntity.ok(fromModel(card, cardService));
+    }
 }
