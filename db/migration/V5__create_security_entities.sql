@@ -21,34 +21,34 @@ ALTER TABLE authorities ADD CONSTRAINT fk_authorities_users FOREIGN KEY (usernam
 CREATE INDEX ix_auth_username ON authorities(username, authority);
 
 --insert(users#username#admin#password#{bcrypt}$2a$10$HGTok2MzVIq8hHdrdmCeN.2iCFhnpEZRhwwqzn6J8pPNg7ScrE6c.)
-INSERT 
+INSERT
 INTO
   users
-  (username, password, enabled) 
+  (username, password, enabled)
 VALUES
-  ('admin', '{bcrypt}$2a$10$HGTok2MzVIq8hHdrdmCeN.2iCFhnpEZRhwwqzn6J8pPNg7ScrE6c.', TRUE);
+  ('admin', '$2a$10$HGTok2MzVIq8hHdrdmCeN.2iCFhnpEZRhwwqzn6J8pPNg7ScrE6c.', TRUE);
 
 --insert(authorities#authority#ROLE_ADMIN#username#admin)
-INSERT 
+INSERT
 INTO
   authorities
-  (authority, username) 
+  (authority, username)
 VALUES
   ('ROLE_ADMIN', 'admin');
 
 --insert(users#username#pkmn_user_app#password#{bcrypt}$2a$10$Uk2GTKoNpjG5nfCi1lPyTuoFZRUdGY5RqhBmMi27dZ.Pss8V4tTxy)
-INSERT 
+INSERT
 INTO
   users
-  (username, password, enabled) 
+  (username, password, enabled)
 VALUES
-  ('pkmn_user_app', '{bcrypt}$2a$10$Uk2GTKoNpjG5nfCi1lPyTuoFZRUdGY5RqhBmMi27dZ.Pss8V4tTxy', TRUE);
+  ('pkmn_user_app', '$2a$10$Uk2GTKoNpjG5nfCi1lPyTuoFZRUdGY5RqhBmMi27dZ.Pss8V4tTxy', TRUE);
 
 --insert(authorities#authority#ROLE_USER#username#pkmn_user_app)
-INSERT 
+INSERT
 INTO
   authorities
-  (authority, username) 
+  (authority, username)
 VALUES
   ('ROLE_USER', 'pkmn_user_app');
 
