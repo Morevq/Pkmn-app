@@ -1,4 +1,4 @@
-package su.morevq.pkmn.service;
+package su.morevq.pkmn.models.student.service;
 
 import su.morevq.pkmn.models.student.Student;
 import su.morevq.pkmn.entity.StudentEntity;

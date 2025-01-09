@@ -1,4 +1,4 @@
-package su.morevq.pkmn.service;
+package su.morevq.pkmn.models.card.service;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -6,6 +6,8 @@ import org.springframework.stereotype.Service;
 import su.morevq.pkmn.models.card.Card;
 import su.morevq.pkmn.dao.CardDao;
 import su.morevq.pkmn.entity.CardEntity;
+import su.morevq.pkmn.service.PokemonTcgAPIService;
+import su.morevq.pkmn.models.student.service.StudentService;
 
 import java.io.IOException;
 import java.util.List;

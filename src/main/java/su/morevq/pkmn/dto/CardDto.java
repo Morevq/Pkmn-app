@@ -6,7 +6,7 @@ import su.morevq.pkmn.models.card.Card;
 import su.morevq.pkmn.models.card.EnergyType;
 import su.morevq.pkmn.models.card.PokemonStage;
 import su.morevq.pkmn.models.student.Student;
-import su.morevq.pkmn.service.CardService;
+import su.morevq.pkmn.models.card.service.CardService;
 
 import java.util.List;
 

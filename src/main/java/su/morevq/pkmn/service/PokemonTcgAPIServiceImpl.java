@@ -9,7 +9,6 @@ import su.morevq.pkmn.models.card.AttackSkill;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Map;
 
 @Service
 @RequiredArgsConstructor

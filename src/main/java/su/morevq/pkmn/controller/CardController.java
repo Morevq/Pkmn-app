@@ -4,11 +4,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import su.morevq.pkmn.dto.CardDto;
-import su.morevq.pkmn.entity.CardEntity;
-import su.morevq.pkmn.entity.StudentEntity;
 import su.morevq.pkmn.models.card.Card;
 import su.morevq.pkmn.models.student.Student;
-import su.morevq.pkmn.service.CardService;
+import su.morevq.pkmn.models.card.service.CardService;
 
 import java.util.List;
 import java.util.UUID;

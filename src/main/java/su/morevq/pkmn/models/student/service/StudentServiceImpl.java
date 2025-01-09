@@ -1,4 +1,4 @@
-package su.morevq.pkmn.service;
+package su.morevq.pkmn.models.student.service;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;

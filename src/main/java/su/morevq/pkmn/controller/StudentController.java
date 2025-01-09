@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import su.morevq.pkmn.models.student.Student;
-import su.morevq.pkmn.service.StudentService;
+import su.morevq.pkmn.models.student.service.StudentService;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package su.morevq.pkmn.service;
+package su.morevq.pkmn.models.card.service;
 
 import su.morevq.pkmn.models.card.Card;
 import su.morevq.pkmn.entity.CardEntity;
